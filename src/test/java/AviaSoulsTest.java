@@ -61,12 +61,5 @@ public class AviaSoulsTest {
         Ticket[] expected = {};
         Assertions.assertArrayEquals(expected, actual);
     }
-
-    @Test
-    public void testSearchAndSortByComparator() {
-        TicketTimeComparator timeComparator = new TicketTimeComparator();
-        Ticket[] actual = souls.searchAndSortBy("Москва", "Сочи", timeComparator);
-        Ticket[] expected = {ticket5, ticket1};
-
-    }
+    
 }
